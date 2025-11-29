@@ -1,0 +1,35 @@
+# Archivos de usuario de Visual Studio
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Archivos de build
+bin/
+obj/
+[Bb]uild/
+[Bb]uilds/
+*.dll
+*.exe
+*.pdb
+*.cache
+*.log
+
+# Archivos de configuración del IDE
+.vscode/
+.vs/
+*.dbmdl
+
+# Archivos de dependencias temporales
+*.nupkg
+*.nuget.props
+*.nuget.targets
+project.lock.json
+project.fragment.lock.json
+
+# Otros
+*.tmp
+*.bak
+*.swp
+*.DS_Store
+Thumbs.db
