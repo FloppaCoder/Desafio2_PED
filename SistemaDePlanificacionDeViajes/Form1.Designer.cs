@@ -29,64 +29,192 @@
         private void InitializeComponent()
         {
             groupBox1 = new GroupBox();
-            comboBox2 = new ComboBox();
+            txtResultados = new TextBox();
+            label6 = new Label();
+            txtNuevoPeso = new TextBox();
+            label5 = new Label();
+            txtPeso = new TextBox();
+            label4 = new Label();
+            txtTiempoTotal = new TextBox();
+            label3 = new Label();
+            btnRutaCorta = new Button();
+            btnBusquedaProfundidad = new Button();
+            btnBusquedaAmplitud = new Button();
+            cmbDestino = new ComboBox();
             label2 = new Label();
-            comboBox1 = new ComboBox();
+            cmbOrigen = new ComboBox();
             label1 = new Label();
             pictureBox1 = new PictureBox();
-            button1 = new Button();
-            button2 = new Button();
-            button3 = new Button();
-            label3 = new Label();
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
-            label4 = new Label();
-            textBox3 = new TextBox();
-            label5 = new Label();
-            label6 = new Label();
-            textBox4 = new TextBox();
             groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // groupBox1
             // 
-            groupBox1.Controls.Add(textBox4);
+            groupBox1.Controls.Add(txtResultados);
             groupBox1.Controls.Add(label6);
-            groupBox1.Controls.Add(textBox3);
+            groupBox1.Controls.Add(txtNuevoPeso);
             groupBox1.Controls.Add(label5);
-            groupBox1.Controls.Add(textBox2);
+            groupBox1.Controls.Add(txtPeso);
             groupBox1.Controls.Add(label4);
-            groupBox1.Controls.Add(textBox1);
+            groupBox1.Controls.Add(txtTiempoTotal);
             groupBox1.Controls.Add(label3);
-            groupBox1.Controls.Add(button3);
-            groupBox1.Controls.Add(button2);
-            groupBox1.Controls.Add(button1);
-            groupBox1.Controls.Add(comboBox2);
+            groupBox1.Controls.Add(btnRutaCorta);
+            groupBox1.Controls.Add(btnBusquedaProfundidad);
+            groupBox1.Controls.Add(btnBusquedaAmplitud);
+            groupBox1.Controls.Add(cmbDestino);
             groupBox1.Controls.Add(label2);
-            groupBox1.Controls.Add(comboBox1);
+            groupBox1.Controls.Add(cmbOrigen);
             groupBox1.Controls.Add(label1);
             groupBox1.Font = new Font("Segoe UI", 13F);
             groupBox1.ForeColor = Color.White;
             groupBox1.Location = new Point(888, 12);
             groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(364, 648);
+            groupBox1.Size = new Size(349, 738);
             groupBox1.TabIndex = 0;
             groupBox1.TabStop = false;
             groupBox1.Text = "Controles";
             // 
-            // comboBox2
+            // txtResultados
             // 
-            comboBox2.BackColor = Color.FromArgb(0, 25, 38);
-            comboBox2.DropDownStyle = ComboBoxStyle.DropDownList;
-            comboBox2.FlatStyle = FlatStyle.Flat;
-            comboBox2.Font = new Font("Segoe UI", 11F);
-            comboBox2.ForeColor = Color.White;
-            comboBox2.FormattingEnabled = true;
-            comboBox2.Location = new Point(27, 144);
-            comboBox2.Name = "comboBox2";
-            comboBox2.Size = new Size(294, 28);
-            comboBox2.TabIndex = 3;
+            txtResultados.BackColor = Color.FromArgb(0, 25, 38);
+            txtResultados.Font = new Font("Segoe UI", 11F);
+            txtResultados.ForeColor = Color.White;
+            txtResultados.Location = new Point(27, 488);
+            txtResultados.Multiline = true;
+            txtResultados.Name = "txtResultados";
+            txtResultados.Size = new Size(294, 230);
+            txtResultados.TabIndex = 14;
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Font = new Font("Segoe UI", 11F);
+            label6.Location = new Point(27, 457);
+            label6.Name = "label6";
+            label6.Size = new Size(84, 20);
+            label6.TabIndex = 13;
+            label6.Text = "Resultados:";
+            // 
+            // txtNuevoPeso
+            // 
+            txtNuevoPeso.BackColor = Color.FromArgb(0, 25, 38);
+            txtNuevoPeso.Font = new Font("Segoe UI", 11F);
+            txtNuevoPeso.ForeColor = Color.White;
+            txtNuevoPeso.Location = new Point(146, 405);
+            txtNuevoPeso.Name = "txtNuevoPeso";
+            txtNuevoPeso.Size = new Size(175, 27);
+            txtNuevoPeso.TabIndex = 12;
+            txtNuevoPeso.KeyPress += txtNuevoPeso_KeyPress;
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Font = new Font("Segoe UI", 11F);
+            label5.Location = new Point(27, 412);
+            label5.Name = "label5";
+            label5.Size = new Size(89, 20);
+            label5.TabIndex = 11;
+            label5.Text = "Nuevo Peso:";
+            // 
+            // txtPeso
+            // 
+            txtPeso.BackColor = Color.FromArgb(0, 25, 38);
+            txtPeso.Font = new Font("Segoe UI", 11F);
+            txtPeso.ForeColor = Color.White;
+            txtPeso.Location = new Point(146, 357);
+            txtPeso.Name = "txtPeso";
+            txtPeso.Size = new Size(175, 27);
+            txtPeso.TabIndex = 10;
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Font = new Font("Segoe UI", 11F);
+            label4.Location = new Point(27, 364);
+            label4.Name = "label4";
+            label4.Size = new Size(42, 20);
+            label4.TabIndex = 9;
+            label4.Text = "Peso:";
+            // 
+            // txtTiempoTotal
+            // 
+            txtTiempoTotal.BackColor = Color.FromArgb(0, 25, 38);
+            txtTiempoTotal.Font = new Font("Segoe UI", 11F);
+            txtTiempoTotal.ForeColor = Color.White;
+            txtTiempoTotal.Location = new Point(146, 312);
+            txtTiempoTotal.Name = "txtTiempoTotal";
+            txtTiempoTotal.Size = new Size(175, 27);
+            txtTiempoTotal.TabIndex = 8;
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Font = new Font("Segoe UI", 11F);
+            label3.Location = new Point(27, 319);
+            label3.Name = "label3";
+            label3.Size = new Size(100, 20);
+            label3.TabIndex = 7;
+            label3.Text = "Tiempo Total:";
+            // 
+            // btnRutaCorta
+            // 
+            btnRutaCorta.BackColor = Color.FromArgb(0, 25, 38);
+            btnRutaCorta.BackgroundImageLayout = ImageLayout.None;
+            btnRutaCorta.FlatStyle = FlatStyle.Flat;
+            btnRutaCorta.Font = new Font("Segoe UI", 10F);
+            btnRutaCorta.ForeColor = Color.White;
+            btnRutaCorta.Location = new Point(27, 266);
+            btnRutaCorta.Name = "btnRutaCorta";
+            btnRutaCorta.Size = new Size(294, 30);
+            btnRutaCorta.TabIndex = 6;
+            btnRutaCorta.Text = "Ruta mas Corta";
+            btnRutaCorta.UseVisualStyleBackColor = false;
+            btnRutaCorta.Click += btnRutaCorta_Click;
+            // 
+            // btnBusquedaProfundidad
+            // 
+            btnBusquedaProfundidad.BackColor = Color.FromArgb(0, 25, 38);
+            btnBusquedaProfundidad.BackgroundImageLayout = ImageLayout.None;
+            btnBusquedaProfundidad.FlatStyle = FlatStyle.Flat;
+            btnBusquedaProfundidad.Font = new Font("Segoe UI", 10F);
+            btnBusquedaProfundidad.ForeColor = Color.White;
+            btnBusquedaProfundidad.Location = new Point(27, 221);
+            btnBusquedaProfundidad.Name = "btnBusquedaProfundidad";
+            btnBusquedaProfundidad.Size = new Size(294, 30);
+            btnBusquedaProfundidad.TabIndex = 5;
+            btnBusquedaProfundidad.Text = "Busqueda en Profundidad";
+            btnBusquedaProfundidad.UseVisualStyleBackColor = false;
+            btnBusquedaProfundidad.Click += btnBusquedaProfundidad_Click;
+            // 
+            // btnBusquedaAmplitud
+            // 
+            btnBusquedaAmplitud.BackColor = Color.FromArgb(0, 25, 38);
+            btnBusquedaAmplitud.BackgroundImageLayout = ImageLayout.None;
+            btnBusquedaAmplitud.FlatStyle = FlatStyle.Flat;
+            btnBusquedaAmplitud.Font = new Font("Segoe UI", 10F);
+            btnBusquedaAmplitud.ForeColor = Color.White;
+            btnBusquedaAmplitud.Location = new Point(27, 185);
+            btnBusquedaAmplitud.Name = "btnBusquedaAmplitud";
+            btnBusquedaAmplitud.Size = new Size(294, 30);
+            btnBusquedaAmplitud.TabIndex = 4;
+            btnBusquedaAmplitud.Text = "Busqueda en Amplitud";
+            btnBusquedaAmplitud.UseVisualStyleBackColor = false;
+            btnBusquedaAmplitud.Click += btnBusquedaAmplitud_Click;
+            // 
+            // cmbDestino
+            // 
+            cmbDestino.BackColor = Color.FromArgb(0, 25, 38);
+            cmbDestino.DropDownStyle = ComboBoxStyle.DropDownList;
+            cmbDestino.FlatStyle = FlatStyle.Flat;
+            cmbDestino.Font = new Font("Segoe UI", 11F);
+            cmbDestino.ForeColor = Color.White;
+            cmbDestino.FormattingEnabled = true;
+            cmbDestino.Location = new Point(27, 144);
+            cmbDestino.Name = "cmbDestino";
+            cmbDestino.Size = new Size(294, 28);
+            cmbDestino.TabIndex = 3;
+            cmbDestino.SelectedIndexChanged += cmbDestino_SelectedIndexChanged;
             // 
             // label2
             // 
@@ -98,18 +226,18 @@
             label2.TabIndex = 2;
             label2.Text = "Estacion de Destino:";
             // 
-            // comboBox1
+            // cmbOrigen
             // 
-            comboBox1.BackColor = Color.FromArgb(0, 25, 38);
-            comboBox1.DropDownStyle = ComboBoxStyle.DropDownList;
-            comboBox1.FlatStyle = FlatStyle.Flat;
-            comboBox1.Font = new Font("Segoe UI", 11F);
-            comboBox1.ForeColor = Color.White;
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(27, 67);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(294, 28);
-            comboBox1.TabIndex = 1;
+            cmbOrigen.BackColor = Color.FromArgb(0, 25, 38);
+            cmbOrigen.DropDownStyle = ComboBoxStyle.DropDownList;
+            cmbOrigen.FlatStyle = FlatStyle.Flat;
+            cmbOrigen.Font = new Font("Segoe UI", 11F);
+            cmbOrigen.ForeColor = Color.White;
+            cmbOrigen.FormattingEnabled = true;
+            cmbOrigen.Location = new Point(27, 67);
+            cmbOrigen.Name = "cmbOrigen";
+            cmbOrigen.Size = new Size(294, 28);
+            cmbOrigen.TabIndex = 1;
             // 
             // label1
             // 
@@ -124,141 +252,20 @@
             // pictureBox1
             // 
             pictureBox1.Image = Properties.Resources.map;
+            pictureBox1.InitialImage = Properties.Resources.map;
             pictureBox1.Location = new Point(25, 25);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(831, 635);
+            pictureBox1.Size = new Size(831, 725);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 1;
             pictureBox1.TabStop = false;
-            // 
-            // button1
-            // 
-            button1.BackColor = Color.FromArgb(0, 25, 38);
-            button1.BackgroundImageLayout = ImageLayout.None;
-            button1.FlatStyle = FlatStyle.Flat;
-            button1.Font = new Font("Segoe UI", 10F);
-            button1.ForeColor = Color.White;
-            button1.Location = new Point(27, 185);
-            button1.Name = "button1";
-            button1.Size = new Size(294, 30);
-            button1.TabIndex = 4;
-            button1.Text = "Busqueda en Amplitud";
-            button1.UseVisualStyleBackColor = false;
-            // 
-            // button2
-            // 
-            button2.BackColor = Color.FromArgb(0, 25, 38);
-            button2.BackgroundImageLayout = ImageLayout.None;
-            button2.FlatStyle = FlatStyle.Flat;
-            button2.Font = new Font("Segoe UI", 10F);
-            button2.ForeColor = Color.White;
-            button2.Location = new Point(27, 221);
-            button2.Name = "button2";
-            button2.Size = new Size(294, 30);
-            button2.TabIndex = 5;
-            button2.Text = "Busqueda en Profundidad";
-            button2.UseVisualStyleBackColor = false;
-            // 
-            // button3
-            // 
-            button3.BackColor = Color.FromArgb(0, 25, 38);
-            button3.BackgroundImageLayout = ImageLayout.None;
-            button3.FlatStyle = FlatStyle.Flat;
-            button3.Font = new Font("Segoe UI", 10F);
-            button3.ForeColor = Color.White;
-            button3.Location = new Point(27, 266);
-            button3.Name = "button3";
-            button3.Size = new Size(294, 30);
-            button3.TabIndex = 6;
-            button3.Text = "Ruta mas Corta";
-            button3.UseVisualStyleBackColor = false;
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.Font = new Font("Segoe UI", 11F);
-            label3.Location = new Point(27, 319);
-            label3.Name = "label3";
-            label3.Size = new Size(100, 20);
-            label3.TabIndex = 7;
-            label3.Text = "Tiempo Total:";
-            // 
-            // textBox1
-            // 
-            textBox1.BackColor = Color.FromArgb(0, 25, 38);
-            textBox1.Font = new Font("Segoe UI", 11F);
-            textBox1.ForeColor = Color.White;
-            textBox1.Location = new Point(146, 312);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(175, 27);
-            textBox1.TabIndex = 8;
-            // 
-            // textBox2
-            // 
-            textBox2.BackColor = Color.FromArgb(0, 25, 38);
-            textBox2.Font = new Font("Segoe UI", 11F);
-            textBox2.ForeColor = Color.White;
-            textBox2.Location = new Point(146, 357);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(175, 27);
-            textBox2.TabIndex = 10;
-            // 
-            // label4
-            // 
-            label4.AutoSize = true;
-            label4.Font = new Font("Segoe UI", 11F);
-            label4.Location = new Point(27, 364);
-            label4.Name = "label4";
-            label4.Size = new Size(42, 20);
-            label4.TabIndex = 9;
-            label4.Text = "Peso:";
-            // 
-            // textBox3
-            // 
-            textBox3.BackColor = Color.FromArgb(0, 25, 38);
-            textBox3.Font = new Font("Segoe UI", 11F);
-            textBox3.ForeColor = Color.White;
-            textBox3.Location = new Point(146, 405);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(175, 27);
-            textBox3.TabIndex = 12;
-            // 
-            // label5
-            // 
-            label5.AutoSize = true;
-            label5.Font = new Font("Segoe UI", 11F);
-            label5.Location = new Point(27, 412);
-            label5.Name = "label5";
-            label5.Size = new Size(89, 20);
-            label5.TabIndex = 11;
-            label5.Text = "Nuevo Peso:";
-            // 
-            // label6
-            // 
-            label6.AutoSize = true;
-            label6.Font = new Font("Segoe UI", 11F);
-            label6.Location = new Point(27, 457);
-            label6.Name = "label6";
-            label6.Size = new Size(84, 20);
-            label6.TabIndex = 13;
-            label6.Text = "Resultados:";
-            // 
-            // textBox4
-            // 
-            textBox4.BackColor = Color.FromArgb(0, 25, 38);
-            textBox4.Font = new Font("Segoe UI", 11F);
-            textBox4.ForeColor = Color.White;
-            textBox4.Location = new Point(27, 488);
-            textBox4.Multiline = true;
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(294, 134);
-            textBox4.TabIndex = 14;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(0, 25, 38);
-            ClientSize = new Size(1264, 681);
+            ClientSize = new Size(1247, 768);
             Controls.Add(pictureBox1);
             Controls.Add(groupBox1);
             ForeColor = Color.FromArgb(0, 25, 38);
@@ -274,20 +281,20 @@
 
         private GroupBox groupBox1;
         private PictureBox pictureBox1;
-        private ComboBox comboBox1;
+        private ComboBox cmbOrigen;
         private Label label1;
-        private ComboBox comboBox2;
+        private ComboBox cmbDestino;
         private Label label2;
-        private Button button1;
-        private Button button2;
-        private TextBox textBox1;
+        private Button btnBusquedaAmplitud;
+        private Button btnBusquedaProfundidad;
+        private TextBox txtTiempoTotal;
         private Label label3;
-        private Button button3;
-        private TextBox textBox4;
+        private Button btnRutaCorta;
+        private TextBox txtResultados;
         private Label label6;
-        private TextBox textBox3;
+        private TextBox txtNuevoPeso;
         private Label label5;
-        private TextBox textBox2;
+        private TextBox txtPeso;
         private Label label4;
     }
 }
